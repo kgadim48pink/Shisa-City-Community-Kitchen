@@ -1,0 +1,89 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="uTDCrVNpgQHwPWEpZ3z-">
+    <mxGraphModel dx="860" dy="529" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-2" edge="1" parent="1" source="sUo4TPjqj8tz5lBMrxAb-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="sUo4TPjqj8tz5lBMrxAb-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-1" parent="1" style="whiteSpace=wrap;html=1;" value="Homepage" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-11" edge="1" parent="1" source="sUo4TPjqj8tz5lBMrxAb-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-3" parent="1" style="whiteSpace=wrap;html=1;" value="Our program" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-6" edge="1" parent="1" source="sUo4TPjqj8tz5lBMrxAb-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-10" edge="1" parent="1" source="sUo4TPjqj8tz5lBMrxAb-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-4" parent="1" style="whiteSpace=wrap;html=1;" value="About us" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-7" edge="1" parent="1" source="sUo4TPjqj8tz5lBMrxAb-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-12" edge="1" parent="1" source="sUo4TPjqj8tz5lBMrxAb-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="580" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-5" parent="1" style="whiteSpace=wrap;html=1;" value="Get involved" vertex="1">
+          <mxGeometry height="60" width="120" x="520" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-8" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="160" as="sourcePoint" />
+            <mxPoint x="260" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="160" as="sourcePoint" />
+            <mxPoint x="580" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-13" parent="1" style="whiteSpace=wrap;html=1;" value="-History&lt;div&gt;-Mission/Vision&lt;/div&gt;&lt;div&gt;-Team Members&lt;/div&gt;&lt;div&gt;-Impact stories&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="120" x="200" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-16" edge="1" parent="1" source="sUo4TPjqj8tz5lBMrxAb-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="480" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-14" parent="1" style="whiteSpace=wrap;html=1;" value="-Meal program&lt;div&gt;-Cooking classes&lt;/div&gt;&lt;div&gt;-Food literacy&lt;/div&gt;&lt;div&gt;-Community garden&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="120" x="360" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-15" parent="1" style="whiteSpace=wrap;html=1;" value="-Volunteer opportunities&lt;div&gt;-Donation options&lt;/div&gt;&lt;div&gt;-Sponsor enquiry&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="120" x="520" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-18" edge="1" parent="1" source="sUo4TPjqj8tz5lBMrxAb-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="600" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-17" parent="1" style="whiteSpace=wrap;html=1;" value="-Contact us" vertex="1">
+          <mxGeometry height="60" width="120" x="360" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="sUo4TPjqj8tz5lBMrxAb-19" parent="1" style="whiteSpace=wrap;html=1;" value="-Contact form&lt;div&gt;-Location one&lt;/div&gt;&lt;div&gt;-Location two&lt;/div&gt;&lt;div&gt;-Social media&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="360" y="600" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
