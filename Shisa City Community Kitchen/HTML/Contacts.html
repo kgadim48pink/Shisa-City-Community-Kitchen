@@ -13,8 +13,33 @@
         <!-- Viewport settings for responsive design on mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- Page title displayed in browser tab -->
-        <title>Contact Us - Shisa City Community Kitchen</title>
+        <!-- PRIMARY META TAGS (SEO) -->
+        <title>Contact Us - Shisa City Community Kitchen | Get In Touch</title>
+        <meta name="title" content="Contact Us - Shisa City Community Kitchen | Get In Touch">
+        <meta name="description" content="Contact Shisa City Community Kitchen. Find our locations, phone numbers, email addresses, and operating hours. Send us a message online.">
+        <meta name="keywords" content="contact Shisa City, community kitchen contact, food bank location, phone number, email, directions, operating hours">
+        <meta name="author" content="Keorapetse Maelane">
+        <meta name="robots" content="index, follow">
+        
+        <!-- OPEN GRAPH / FACEBOOK META TAGS -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://shisacitykitchen.netlify.app/contact.html">
+        <meta property="og:title" content="Contact Us - Shisa City Community Kitchen">
+        <meta property="og:description" content="Get in touch with us. Find our locations, contact details, and send us a message.">
+        <meta property="og:image" content="images/homepage-picture.png">
+        
+        <!-- TWITTER META TAGS -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Contact Us - Shisa City Community Kitchen">
+        <meta property="twitter:description" content="Get in touch with us. Find our locations, contact details, and send us a message.">
+        <meta property="twitter:image" content="images/homepage-picture.png">
+        
+        <!-- EXTERNAL STYLESHEETS -->
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <!-- BODY SECTION: All visible page content -->
@@ -34,7 +59,7 @@
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Our Programs</a></li>
                     <li><a href="enquiry.html">Get Involved</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="contact.html" class="active">Contact Us</a></li>
                 </ul>
             </nav>
         </header>
@@ -52,43 +77,45 @@
             <section class="contact-info">
                 <h2>Contact Information</h2>
 
-                <!-- Phone -->
-                <div class="contact-item">
-                    <h3>📞 Phone</h3>
-                    <p>Main: <a href="tel:+27123456789">+27 12 345 6789</a></p>
-                    <p>Emergency: <a href="tel:+27123456790">+27 12 345 6790</a></p>
-                </div>
+                <div class="contact-info-grid">
+                    <!-- Phone -->
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p>Main: <a href="tel:+27123456789">+27 12 345 6789</a></p>
+                        <p>Emergency: <a href="tel:+27123456790">+27 12 345 6790</a></p>
+                    </div>
 
-                <!-- Email -->
-                <div class="contact-item">
-                    <h3>✉️ Email</h3>
-                    <p>General Enquiries: <a href="mailto:info@shisacitykitchen.org.za">info@shisacitykitchen.org.za</a></p>
-                    <p>Volunteer Enquiries: <a href="mailto:volunteer@shisacitykitchen.org.za">volunteer@shisacitykitchen.org.za</a></p>
-                    <p>Donation Enquiries: <a href="mailto:donate@shisacitykitchen.org.za">donate@shisacitykitchen.org.za</a></p>
-                </div>
+                    <!-- Email -->
+                    <div class="contact-item">
+                        <h3>✉️ Email</h3>
+                        <p>General Enquiries: <a href="mailto:info@shisacitykitchen.org.za">info@shisacitykitchen.org.za</a></p>
+                        <p>Volunteer Enquiries: <a href="mailto:volunteer@shisacitykitchen.org.za">volunteer@shisacitykitchen.org.za</a></p>
+                        <p>Donation Enquiries: <a href="mailto:donate@shisacitykitchen.org.za">donate@shisacitykitchen.org.za</a></p>
+                    </div>
 
-                <!-- Operating Hours -->
-                <div class="contact-item">
-                    <h3>🕐 Operating Hours</h3>
-                    <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
-                    <p>Saturday: 9:00 AM - 3:00 PM</p>
-                    <p>Sunday: Closed</p>
-                    <p>Public Holidays: Closed</p>
-                </div>
+                    <!-- Operating Hours -->
+                    <div class="contact-item">
+                        <h3>🕐 Operating Hours</h3>
+                        <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                        <p>Saturday: 9:00 AM - 3:00 PM</p>
+                        <p>Sunday: Closed</p>
+                        <p>Public Holidays: Closed</p>
+                    </div>
 
-                <!-- Social Media -->
-                <div class="contact-item">
-                    <h3>🌐 Follow Us</h3>
-                    <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
+                    <!-- Social Media -->
+                    <div class="contact-item">
+                        <h3>🌐 Follow Us</h3>
+                        <ul class="contact-social">
+                            <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
             <!-- LOCATION 1: MAIN LOCATION -->
-            <section class="location">
+            <section class="location-card">
                 <h2>📍 Main Location</h2>
                 
                 <div class="location-details">
@@ -97,14 +124,13 @@
                     <p>Shisa City, 0001</p>
                     <p>Gauteng, South Africa</p>
                     <br>
-                    <p><strong>Phone:</strong> +27 12 345 6789</p>
-                    <p><strong>Email:</strong> info@shisacitykitchen.org.za</p>
+                    <p><strong>Phone:</strong> <a href="tel:+27123456789">+27 12 345 6789</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@shisacitykitchen.org.za">info@shisacitykitchen.org.za</a></p>
                 </div>
 
-                <!-- Google Maps Embed (Placeholder - will display a map when online) -->
+                <!-- Google Maps Embed -->
                 <div class="map-container">
                     <h3>Find Us Here</h3>
-                    <!-- Google Maps iframe - replace the src with actual map URL -->
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.054143774474!2d28.045169315020234!3d-26.095323766620283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9571a000000000%3A0x0000000000000000!2sPretoria%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000" 
                         width="600" 
@@ -118,7 +144,7 @@
             </section>
 
             <!-- LOCATION 2: SECONDARY / SATELLITE LOCATION -->
-            <section class="location">
+            <section class="location-card">
                 <h2>📍 Satellite Location</h2>
 
                 <div class="location-details">
@@ -127,14 +153,13 @@
                     <p>Shisa City, 0002</p>
                     <p>Gauteng, South Africa</p>
                     <br>
-                    <p><strong>Phone:</strong> +27 12 345 6791</p>
-                    <p><strong>Email:</strong> garden@shisacitykitchen.org.za</p>
+                    <p><strong>Phone:</strong> <a href="tel:+27123456791">+27 12 345 6791</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:garden@shisacitykitchen.org.za">garden@shisacitykitchen.org.za</a></p>
                 </div>
 
-                <!-- Google Maps Embed (Placeholder - will display a map when online) -->
+                <!-- Google Maps Embed -->
                 <div class="map-container">
                     <h3>Find Us Here</h3>
-                    <!-- Google Maps iframe - replace the src with actual map URL -->
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3583.054143774474!2d28.045169315020234!3d-26.095323766620283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9571a000000000%3A0x0000000000000000!2sPretoria%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1700000000000" 
                         width="600" 
@@ -155,24 +180,27 @@
                     we'll get back to you as soon as possible.
                 </p>
 
-                <form action="#" method="POST">
+                <form id="contactForm" action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
 
                     <!-- Full Name -->
                     <div class="form-group">
-                        <label for="name">Full Name <span class="required">*</span></label>
-                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        <label for="contactName">Full Name <span class="required">*</span></label>
+                        <input type="text" id="contactName" name="name" placeholder="Enter your full name" required minlength="3" maxlength="50">
+                        <span class="error-message" id="contactNameError"></span>
                     </div>
 
                     <!-- Email Address -->
                     <div class="form-group">
-                        <label for="email">Email Address <span class="required">*</span></label>
-                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <label for="contactEmail">Email Address <span class="required">*</span></label>
+                        <input type="email" id="contactEmail" name="email" placeholder="Enter your email address" required>
+                        <span class="error-message" id="contactEmailError"></span>
                     </div>
 
                     <!-- Phone Number -->
                     <div class="form-group">
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        <label for="contactPhone">Phone Number</label>
+                        <input type="tel" id="contactPhone" name="phone" placeholder="e.g., 012 345 6789" pattern="[0-9\s\-\+\(\)]{10,15}">
+                        <span class="error-message" id="contactPhoneError"></span>
                     </div>
 
                     <!-- Subject -->
@@ -187,18 +215,23 @@
                             <option value="feedback">Feedback</option>
                             <option value="other">Other</option>
                         </select>
+                        <span class="error-message" id="subjectError"></span>
                     </div>
 
                     <!-- Message -->
                     <div class="form-group">
-                        <label for="message">Message <span class="required">*</span></label>
-                        <textarea id="message" name="message" rows="6" placeholder="Please provide details about your enquiry..." required></textarea>
+                        <label for="contactMessage">Message <span class="required">*</span></label>
+                        <textarea id="contactMessage" name="message" rows="6" placeholder="Please provide details about your enquiry..." required minlength="10" maxlength="1000"></textarea>
+                        <span class="error-message" id="contactMessageError"></span>
                     </div>
 
                     <!-- Submit Button -->
                     <div class="form-group">
-                        <button type="submit">Send Message</button>
+                        <button type="submit" id="contactSubmitBtn">Send Message</button>
                     </div>
+
+                    <!-- Response message area -->
+                    <div id="contactFormResponse" class="form-response"></div>
 
                 </form>
             </section>
@@ -206,28 +239,20 @@
         </main>
 
         <!-- FOOTER SECTION: Copyright, social media, and links -->
-        <footer>
+        <footer class="bottom-footer">
             <!-- Copyright notice -->
             <p>&copy; 2026 Shisa City Community Kitchen. All rights reserved.</p>
 
             <!-- Social media links -->
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
-
-            <!-- Footer navigation -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Programs</a></li>
-                    <li><a href="enquiry.html">Get Involved</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
         </footer>
+
+        <!-- JAVASCRIPT: Links to your script file -->
+        <script src="js/script.js"></script>
 
     </body>
 

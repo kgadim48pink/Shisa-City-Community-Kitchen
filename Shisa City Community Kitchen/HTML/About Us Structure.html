@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<!-- ========================================================== -->
-<!-- DOCUMENT TYPE: Declares this as an HTML5 document           -->
-<!-- ========================================================== -->
+<!-- DOCUMENT TYPE: Declares this as an HTML5 document -->
 <!DOCTYPE html>
 
 <!-- HTML START: Language set to English for accessibility -->
@@ -15,8 +13,33 @@
         <!-- Viewport settings for responsive design on mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- Page title displayed in browser tab -->
-        <title>About Us - Shisa City Community Kitchen</title>
+        <!-- PRIMARY META TAGS (SEO) -->
+        <title>About Us - Shisa City Community Kitchen | Our Story</title>
+        <meta name="title" content="About Us - Shisa City Community Kitchen | Our Story">
+        <meta name="description" content="Learn about the history, mission, vision, and team behind Shisa City Community Kitchen. Serving our community since 2015 with over 500 meals weekly.">
+        <meta name="keywords" content="about Shisa City, community kitchen history, non-profit organisation, mission, vision, team members, food charity">
+        <meta name="author" content="Keorapetse Maelane">
+        <meta name="robots" content="index, follow">
+        
+        <!-- OPEN GRAPH / FACEBOOK META TAGS -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://shisacitykitchen.netlify.app/about.html">
+        <meta property="og:title" content="About Us - Shisa City Community Kitchen">
+        <meta property="og:description" content="Discover our journey from a humble soup kitchen to a comprehensive community food service.">
+        <meta property="og:image" content="images/homepage-picture.png">
+        
+        <!-- TWITTER META TAGS -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="About Us - Shisa City Community Kitchen">
+        <meta property="twitter:description" content="Discover our journey from a humble soup kitchen to a comprehensive community food service.">
+        <meta property="twitter:image" content="images/homepage-picture.png">
+        
+        <!-- EXTERNAL STYLESHEETS -->
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <!-- BODY SECTION: All visible page content -->
@@ -33,7 +56,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="services.html">Our Programs</a></li>
                     <li><a href="enquiry.html">Get Involved</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -82,22 +105,24 @@
                 <section class="mission-vision">
                     <h2>Our Mission &amp; Vision</h2>
 
-                    <!-- Mission Box -->
-                    <div class="mission-box">
-                        <h3>🎯 Our Mission</h3>
-                        <p>
-                            To nourish our community by providing access to healthy, affordable food 
-                            while building connections and food skills among residents.
-                        </p>
-                    </div>
+                    <div class="mission-vision-container">
+                        <!-- Mission Box -->
+                        <div class="mission-box">
+                            <h3>🎯 Our Mission</h3>
+                            <p>
+                                To nourish our community by providing access to healthy, affordable food 
+                                while building connections and food skills among residents.
+                            </p>
+                        </div>
 
-                    <!-- Vision Box -->
-                    <div class="vision-box">
-                        <h3>🌟 Our Vision</h3>
-                        <p>
-                            A community where everyone has access to nutritious food and the knowledge 
-                            to prepare it, fostering dignity, connection, and wellbeing.
-                        </p>
+                        <!-- Vision Box -->
+                        <div class="vision-box">
+                            <h3>🌟 Our Vision</h3>
+                            <p>
+                                A community where everyone has access to nutritious food and the knowledge 
+                                to prepare it, fostering dignity, connection, and wellbeing.
+                            </p>
+                        </div>
                     </div>
                 </section>
 
@@ -110,36 +135,38 @@
                         has access to nutritious food and the skills to prepare it.
                     </p>
 
-                    <!-- Team Member 1: Founder/Director -->
-                    <div class="team-member">
-                        <div class="avatar">EP</div>
-                        <h4>Elena Petrov</h4>
-                        <p>Founder &amp; Director</p>
-                        <p>Master baker and community advocate with over 20 years of experience.</p>
-                    </div>
+                    <div class="team-container">
+                        <!-- Team Member 1: Founder/Director -->
+                        <div class="team-member">
+                            <div class="avatar">EP</div>
+                            <h4>Elena Petrov</h4>
+                            <p class="role">Founder &amp; Director</p>
+                            <p>Master baker and community advocate with over 20 years of experience.</p>
+                        </div>
 
-                    <!-- Team Member 2: Kitchen Manager -->
-                    <div class="team-member">
-                        <div class="avatar">TM</div>
-                        <h4>Thabo Mokoena</h4>
-                        <p>Kitchen Manager</p>
-                        <p>Passionate chef leading our meal preparation and cooking classes.</p>
-                    </div>
+                        <!-- Team Member 2: Kitchen Manager -->
+                        <div class="team-member">
+                            <div class="avatar">TM</div>
+                            <h4>Thabo Mokoena</h4>
+                            <p class="role">Kitchen Manager</p>
+                            <p>Passionate chef leading our meal preparation and cooking classes.</p>
+                        </div>
 
-                    <!-- Team Member 3: Community Outreach Coordinator -->
-                    <div class="team-member">
-                        <div class="avatar">LN</div>
-                        <h4>Lindiwe Ndlovu</h4>
-                        <p>Community Outreach Coordinator</p>
-                        <p>Connecting with local families and building community partnerships.</p>
-                    </div>
+                        <!-- Team Member 3: Community Outreach Coordinator -->
+                        <div class="team-member">
+                            <div class="avatar">LN</div>
+                            <h4>Lindiwe Ndlovu</h4>
+                            <p class="role">Community Outreach Coordinator</p>
+                            <p>Connecting with local families and building community partnerships.</p>
+                        </div>
 
-                    <!-- Team Member 4: Garden Coordinator -->
-                    <div class="team-member">
-                        <div class="avatar">SM</div>
-                        <h4>Sipho Mthembu</h4>
-                        <p>Garden Coordinator</p>
-                        <p>Expert gardener managing our community garden and sustainable food production.</p>
+                        <!-- Team Member 4: Garden Coordinator -->
+                        <div class="team-member">
+                            <div class="avatar">SM</div>
+                            <h4>Sipho Mthembu</h4>
+                            <p class="role">Garden Coordinator</p>
+                            <p>Expert gardener managing our community garden and sustainable food production.</p>
+                        </div>
                     </div>
                 </section>
 
@@ -147,74 +174,69 @@
                 <section class="timeline">
                     <h2>Our Journey So Far</h2>
 
-                    <!-- Timeline Item 1: 2015 -->
-                    <div class="timeline-item">
-                        <span class="year">2015</span>
-                        <p>Founded as a weekly soup kitchen at a local church hall, serving 50 meals per week.</p>
-                    </div>
+                    <div class="timeline-container">
+                        <!-- Timeline Item 1: 2015 -->
+                        <div class="timeline-item">
+                            <span class="year">2015</span>
+                            <p>Founded as a weekly soup kitchen at a local church hall, serving 50 meals per week.</p>
+                        </div>
 
-                    <!-- Timeline Item 2: 2017 -->
-                    <div class="timeline-item">
-                        <span class="year">2017</span>
-                        <p>Expanded services to include cooking classes and food literacy programs.</p>
-                    </div>
+                        <!-- Timeline Item 2: 2017 -->
+                        <div class="timeline-item">
+                            <span class="year">2017</span>
+                            <p>Expanded services to include cooking classes and food literacy programs.</p>
+                        </div>
 
-                    <!-- Timeline Item 3: 2019 -->
-                    <div class="timeline-item">
-                        <span class="year">2019</span>
-                        <p>Opened permanent facility with commercial kitchen and community dining space.</p>
-                    </div>
+                        <!-- Timeline Item 3: 2019 -->
+                        <div class="timeline-item">
+                            <span class="year">2019</span>
+                            <p>Opened permanent facility with commercial kitchen and community dining space.</p>
+                        </div>
 
-                    <!-- Timeline Item 4: 2020 -->
-                    <div class="timeline-item">
-                        <span class="year">2020</span>
-                        <p>Launched community garden project and increased meal production to 500+ meals weekly.</p>
-                    </div>
+                        <!-- Timeline Item 4: 2020 -->
+                        <div class="timeline-item">
+                            <span class="year">2020</span>
+                            <p>Launched community garden project and increased meal production to 500+ meals weekly.</p>
+                        </div>
 
-                    <!-- Timeline Item 5: 2024 -->
-                    <div class="timeline-item">
-                        <span class="year">2024</span>
-                        <p>Celebrated 10 years of service and expanded team to 8 staff members.</p>
+                        <!-- Timeline Item 5: 2024 -->
+                        <div class="timeline-item">
+                            <span class="year">2024</span>
+                            <p>Celebrated 10 years of service and expanded team to 8 staff members.</p>
+                        </div>
                     </div>
                 </section>
 
             </section>
-			
+            
             <!-- CALL TO ACTION SECTION -->
-            <section class="cta">
+            <section class="callout-box">
                 <h2>Join Us in Making a Difference</h2>
                 <p>Your support helps us feed more families and build a stronger community.</p>
                 
-                <a href="enquiry.html">Volunteer Today</a>
-                <a href="enquiry.html">Donate Now</a>
+                <a href="enquiry.html" class="action-button">Volunteer Today</a>
+                <a href="enquiry.html" class="action-button">Donate Now</a>
             </section>
 
         </main>
 
         <!-- FOOTER SECTION: Copyright, social media, and links -->
-        <footer>
+        <footer class="bottom-footer">
             <!-- Copyright notice -->
             <p>&copy; 2026 Shisa City Community Kitchen. All rights reserved.</p>
 
             <!-- Social media links -->
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
-
-            <!-- Footer navigation -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Programs</a></li>
-                    <li><a href="enquiry.html">Get Involved</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
         </footer>
+
+        <!-- JAVASCRIPT: Links to your script file -->
+        <script src="js/script.js"></script>
 
     </body>
 
 </html>
+

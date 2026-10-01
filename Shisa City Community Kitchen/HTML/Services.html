@@ -13,8 +13,33 @@
         <!-- Viewport settings for responsive design on mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- Page title displayed in browser tab -->
-        <title>Our Programs - Shisa City Community Kitchen</title>
+        <!-- PRIMARY META TAGS (SEO) -->
+        <title>Our Programs - Shisa City Community Kitchen | Nourishing Our Community</title>
+        <meta name="title" content="Our Programs - Shisa City Community Kitchen | Nourishing Our Community">
+        <meta name="description" content="Discover the programs offered by Shisa City Community Kitchen including our Meal Program, Cooking Classes, Food Literacy Program, and Community Garden. All programs are free and open to the community.">
+        <meta name="keywords" content="community kitchen, food bank, Shisa City, non-profit, volunteer, donate, cooking classes, food literacy, meal program, community garden">
+        <meta name="author" content="Keorapetse Maelane">
+        <meta name="robots" content="index, follow">
+        
+        <!-- OPEN GRAPH / FACEBOOK META TAGS -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://shisacitykitchen.netlify.app/services.html">
+        <meta property="og:title" content="Our Programs - Shisa City Community Kitchen">
+        <meta property="og:description" content="Nourishing our community with healthy, affordable food and food skills.">
+        <meta property="og:image" content="images/homepage-picture.png">
+        
+        <!-- TWITTER META TAGS -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Our Programs - Shisa City Community Kitchen">
+        <meta property="twitter:description" content="Nourishing our community with healthy, affordable food and food skills.">
+        <meta property="twitter:image" content="images/homepage-picture.png">
+        
+        <!-- EXTERNAL STYLESHEETS -->
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <!-- BODY SECTION: All visible page content -->
@@ -32,7 +57,7 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Programs</a></li>
+                    <li><a href="services.html" class="active">Our Programs</a></li>
                     <li><a href="enquiry.html">Get Involved</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -57,7 +82,21 @@
                 </p>
             </section>
 
-            <!-- PROGRAM DETAILS -->
+            <!-- SEARCH AND FILTER SECTION -->
+            <section class="search-section">
+                <h2>Find a Program</h2>
+                <input type="text" id="searchInput" placeholder="Search programs...">
+                <select id="sortSelect">
+                    <option value="default">Sort by...</option>
+                    <option value="name">Name (A-Z)</option>
+                    <option value="name-desc">Name (Z-A)</option>
+                </select>
+            </section>
+
+            <!-- PROGRAM LIST (populated by JavaScript) -->
+            <div id="programList" class="program-list"></div>
+
+            <!-- PROGRAM DETAILS (Static - can be removed if using JS list)   -->
             <section class="programs-list">
 
                 <!-- PROGRAM 1: Meal Program -->
@@ -229,6 +268,40 @@
                 </div>
             </section>
 
+            <!-- FAQ SECTION WITH ACCORDION -->
+            <section class="faq-section">
+                <h2>Frequently Asked Questions</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Who can access your meal program?
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Our meal program is open to anyone in the community who needs it.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            How can I volunteer?
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>You can apply through our Get Involved page or visit us in person.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Do you offer cooking classes for beginners?
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p>Yes! Our cooking classes are designed for all skill levels, from complete beginners to experienced cooks.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- CALL TO ACTION SECTION -->
             <section class="cta">
                 <h2>Join Us in Making a Difference</h2>
@@ -264,6 +337,8 @@
             </nav>
         </footer>
 
-    </body>
+        <!-- JAVASCRIPT: Links to your script file -->
+        <script src="js/script.js"></script>
 
+    </body>
 </html>

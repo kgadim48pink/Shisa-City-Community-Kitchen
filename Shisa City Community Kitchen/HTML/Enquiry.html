@@ -13,8 +13,33 @@
         <!-- Viewport settings for responsive design on mobile devices -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <!-- Page title displayed in browser tab -->
-        <title>Get Involved - Shisa City Community Kitchen</title>
+        <!-- PRIMARY META TAGS (SEO) -->
+        <title>Get Involved - Shisa City Community Kitchen | Volunteer & Donate</title>
+        <meta name="title" content="Get Involved - Shisa City Community Kitchen | Volunteer & Donate">
+        <meta name="description" content="Volunteer, donate, or sponsor Shisa City Community Kitchen. Apply online to become a volunteer or support our mission to feed the community.">
+        <meta name="keywords" content="volunteer Shisa City, donate food bank, sponsor community kitchen, non-profit volunteer, food donation, charity work">
+        <meta name="author" content="Keorapetse Maelane">
+        <meta name="robots" content="index, follow">
+        
+        <!-- OPEN GRAPH / FACEBOOK META TAGS -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://shisacitykitchen.netlify.app/enquiry.html">
+        <meta property="og:title" content="Get Involved - Shisa City Community Kitchen">
+        <meta property="og:description" content="Join us in making a difference. Volunteer, donate, or sponsor our community programs.">
+        <meta property="og:image" content="images/homepage-picture.png">
+        
+        <!-- TWITTER META TAGS -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Get Involved - Shisa City Community Kitchen">
+        <meta property="twitter:description" content="Join us in making a difference. Volunteer, donate, or sponsor our community programs.">
+        <meta property="twitter:image" content="images/homepage-picture.png">
+        
+        <!-- EXTERNAL STYLESHEETS -->
+        <!-- Font Awesome for icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        
+        <!-- Main stylesheet -->
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
     <!-- BODY SECTION: All visible page content -->
@@ -33,7 +58,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Our Programs</a></li>
-                    <li><a href="enquiry.html">Get Involved</a></li>
+                    <li><a href="enquiry.html" class="active">Get Involved</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
@@ -91,24 +116,27 @@
                 <h2>📝 Volunteer Application Form</h2>
                 <p>Complete the form below to apply as a volunteer.</p>
 
-                <form action="#" method="POST">
+                <form id="volunteerForm" action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
 
                     <!-- Full Name -->
                     <div class="form-group">
                         <label for="fullname">Full Name <span class="required">*</span></label>
-                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+                        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3" maxlength="50">
+                        <span class="error-message" id="fullnameError"></span>
                     </div>
 
                     <!-- Email Address -->
                     <div class="form-group">
                         <label for="email">Email Address <span class="required">*</span></label>
                         <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <span class="error-message" id="emailError"></span>
                     </div>
 
                     <!-- Phone Number -->
                     <div class="form-group">
                         <label for="phone">Phone Number <span class="required">*</span></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g., 012 345 6789" required pattern="[0-9\s\-\+\(\)]{10,15}">
+                        <span class="error-message" id="phoneError"></span>
                     </div>
 
                     <!-- Volunteer Role Selection -->
@@ -123,6 +151,7 @@
                             <option value="delivery">Delivery Driver</option>
                             <option value="other">Other</option>
                         </select>
+                        <span class="error-message" id="roleError"></span>
                     </div>
 
                     <!-- Availability -->
@@ -144,8 +173,11 @@
 
                     <!-- Submit Button -->
                     <div class="form-group">
-                        <button type="submit">Submit Application</button>
+                        <button type="submit" id="volunteerSubmitBtn">Submit Application</button>
                     </div>
+
+                    <!-- Response message area -->
+                    <div id="volunteerFormResponse" class="form-response"></div>
 
                 </form>
             </section>
@@ -177,7 +209,7 @@
 
                 <!-- Donation Button -->
                 <div class="donate-button">
-                    <a href="#">Donate Now</a>
+                    <a href="#" class="action-button">Donate Now</a>
                 </div>
             </section>
 
@@ -202,7 +234,7 @@
                 </p>
             </section>
 
-            <!-- SPONSOR / GENERAL ENQUIRY FORM -->
+            <!-- GENERAL ENQUIRY FORM -->
             <section class="enquiry-form">
                 <h2>📧 General Enquiry</h2>
                 <p>
@@ -210,49 +242,56 @@
                     Complete the form below and we'll get back to you.
                 </p>
 
-                <form action="#" method="POST">
+                <form id="enquiryForm" action="https://formspree.io/f/YOUR-FORM-ID" method="POST">
 
                     <!-- Full Name -->
                     <div class="form-group">
-                        <label for="enquiry-name">Full Name <span class="required">*</span></label>
-                        <input type="text" id="enquiry-name" name="enquiry-name" placeholder="Enter your full name" required>
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required minlength="3" maxlength="50">
+                        <span class="error-message" id="nameError"></span>
                     </div>
 
                     <!-- Email Address -->
                     <div class="form-group">
-                        <label for="enquiry-email">Email Address <span class="required">*</span></label>
-                        <input type="email" id="enquiry-email" name="enquiry-email" placeholder="Enter your email address" required>
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <span class="error-message" id="emailError"></span>
                     </div>
 
                     <!-- Phone Number -->
                     <div class="form-group">
-                        <label for="enquiry-phone">Phone Number</label>
-                        <input type="tel" id="enquiry-phone" name="enquiry-phone" placeholder="Enter your phone number">
+                        <label for="phone">Phone Number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="e.g., 012 345 6789" required pattern="[0-9\s\-\+\(\)]{10,15}">
+                        <span class="error-message" id="phoneError"></span>
                     </div>
 
                     <!-- Enquiry Type -->
                     <div class="form-group">
-                        <label for="enquiry-type">Enquiry Type <span class="required">*</span></label>
-                        <select id="enquiry-type" name="enquiry-type" required>
+                        <label for="enquiryType">Enquiry Type <span class="required">*</span></label>
+                        <select id="enquiryType" name="enquiryType" required>
                             <option value="">Select an option...</option>
                             <option value="volunteer">Volunteering</option>
                             <option value="donate">Donation</option>
-                            <option value="sponsor">Sponsorship / Partnership</option>
+                            <option value="sponsor">Sponsorship</option>
                             <option value="general">General Enquiry</option>
-                            <option value="other">Other</option>
                         </select>
+                        <span class="error-message" id="enquiryTypeError"></span>
                     </div>
 
                     <!-- Message -->
                     <div class="form-group">
-                        <label for="enquiry-message">Message <span class="required">*</span></label>
-                        <textarea id="enquiry-message" name="enquiry-message" rows="5" placeholder="Please provide details about your enquiry..." required></textarea>
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="5" placeholder="Please provide details..." required minlength="10" maxlength="500"></textarea>
+                        <span class="error-message" id="messageError"></span>
                     </div>
 
                     <!-- Submit Button -->
                     <div class="form-group">
-                        <button type="submit">Send Enquiry</button>
+                        <button type="submit" id="submitBtn">Send Enquiry</button>
                     </div>
+
+                    <!-- Response message area -->
+                    <div id="formResponse" class="form-response"></div>
 
                 </form>
             </section>
@@ -260,28 +299,20 @@
         </main>
 
         <!-- FOOTER SECTION: Copyright, social media, and links -->
-        <footer>
+        <footer class="bottom-footer">
             <!-- Copyright notice -->
             <p>&copy; 2026 Shisa City Community Kitchen. All rights reserved.</p>
 
             <!-- Social media links -->
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </div>
-
-            <!-- Footer navigation -->
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Programs</a></li>
-                    <li><a href="enquiry.html">Get Involved</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
         </footer>
+
+        <!-- JAVASCRIPT: Links to your script file -->
+        <script src="js/script.js"></script>
 
     </body>
 
